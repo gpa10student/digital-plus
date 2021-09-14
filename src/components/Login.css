@@ -1,0 +1,136 @@
+body{
+    background: #AA1336;
+    color: #797979;
+}
+
+*, :after, :before{
+    box-sizing: border-box;
+}
+
+.clearfix:after,.clearfix:before{
+    content:"";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+    display: block;
+}
+
+.login-container{
+    width: 45%;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    min-height: 70vh;
+    background: url(../resources/sydney.jpg) no-repeat center;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.6);
+    border-radius: 15px;
+}
+
+.login-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    padding: 12% 18%;
+    background: rgba(0,0,0,.8)
+}
+
+.form-container{
+    min-height: 70vh;
+    position: relative;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.sign-in, .sign-up{
+    display: none
+}
+
+.sign-in:checked + .tab,
+.sign-up:checked + .tab{
+    color: #ffffff;
+    border-color: #AA1336;
+}
+
+.tab{
+    font-size: 22px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+.form-container .signin,
+.form-container .signup{
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    -webkit-transorm: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+}
+
+.sign-in:checked + .tab + .sign-up + .tab + .form-container .signin{
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.sign-up:checked + .tab + .form-container .signup{
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+input{
+    width: 100%;
+    border: none;
+    outline: 0;
+    background: none;
+    color: #ffffff;
+    display: block;
+    margin: 40px 0;
+    padding: 5px 0;
+    transition: .2s;
+    border-bottom: 2px solid #ffffff;
+}
+
+::-webkit-input-placeholder{
+    font-size: 15px;
+    color: #ffffff
+}
+
+.signin-form input[data-type="password"],
+.signup-form input[data-type="password"]{
+    -webkit-text-security: circle;
+}
+
+button{
+    background: #AA1336;
+    color:#ffffff;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    height: 32px;
+    opacity: .9;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+a{
+    color: #ffffff;
+}
+
+.link{
+    text-align: center;
+    margin-top: 20px;
+}
+
