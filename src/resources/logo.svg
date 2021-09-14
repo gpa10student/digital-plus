@@ -1,0 +1,9 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <rect stroke-width="0" stroke="#000" rx="20" id="svg_1" height="100" width="100" y="0" x="0" fill="#aa1336"/>
+  <text transform="matrix(1.23561 0 0 1.79758 -19.5672 -47.4293)" stroke="#000" font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="monospace" font-size="36" id="svg_2" y="65.94598" x="27.12682" stroke-width="0" fill="#ffffff">DS</text>
+  <text transform="matrix(-1.63291 0 0 -1.89777 178.633 182.437)" stroke="#000" font-weight="normal" font-style="normal" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="32" id="svg_3" y="88.44259" x="51.87824" stroke-width="0" fill="#ffffff">+</text>
+ </g>
+</svg>
